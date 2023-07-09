@@ -1,12 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #F7F7F8;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,25 +18,32 @@ html, body{
 }
 
 h1 {
-  font-size: 3.2em;
   line-height: 1.1;
   text-align: center;
   top: 0;
-  color:darkslategray ;
+  color:#285680 ;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 200;
 }
 
 main{
   max-width: 500px;
   margin: auto;
+  padding: 5rem;
 }
 
 p{
-  background-color: darkslategray;
+  background-color:#285680;
   max-width: 70%;
   padding: .3rem 2rem;
-  border-radius: 50px;
+  border-radius: 1px 12px 1px 12px ;
   font-size: .9rem;
   font-weight: 500;
+  min-height:2rem;
+  -webkit-border-radius: 1px 12px 1px 12px ;
+  -moz-border-radius: 1px 12px 1px 12px ;
+  -ms-border-radius: 1px 12px 1px 12px ;
+  -o-border-radius: 1px 12px 1px 12px ;
 }
 
 p span{
@@ -53,6 +59,8 @@ p span:first-child{
   margin-left: 30%;
   display: flex;
   flex-direction: row-reverse;
+  min-height: 2rem;
+  width: fit-content;
 }
 
 .hide {
@@ -67,10 +75,9 @@ form{
 }
 
 input{
-  width: 100%;
+  width: 70%;
   border: none;
-  padding: 1rem;
-  font-size: 1.2rem;
+  padding: .8rem;
   background-color:#fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 15px;
@@ -82,4 +89,22 @@ input{
 
 input:focus{
   outline: none;
+}
+#navBar{
+color: #000;
+display: flex;
+justify-content: space-between;
+padding: .1rem 3rem;
+}
+#navBar ul{
+list-style: none;
+display: flex;
+gap: 2rem;
+}
+#navBar ul li{
+font-family: 'Roboto Slab', serif;
+color: #285680;
+}
+#logo{
+width:3rem
 }

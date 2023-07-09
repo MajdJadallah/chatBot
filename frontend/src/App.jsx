@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 import { Configuration, OpenAIApi } from "openai";
-
+import logo from "./assets/bot_4712106.png"
 const configuration = new Configuration({
   organization:'org-gNGh2t2WYIC9ERDLsocPHEI3',
-  apiKey:'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'
+  apiKey:'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'
 });
 const openai = new OpenAIApi(configuration);
 
@@ -50,8 +50,25 @@ function App() {
   };
 
   return (
+    <>
+    <nav id="navBar">
+    <div>
+      <img
+      src={logo}
+      alt="logo"
+      id="logo"
+      />  
+    </div>
+      <ul>
+        <li>Home</li>
+        <li>Reserch</li>
+        <li>Developers</li>
+        <li>Saftey</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
     <main>
-      <h1>Majd Bot</h1>
+      <h1>Lets start our conversation</h1>
 
       <section>
         {chats && chats.length
@@ -83,6 +100,7 @@ function App() {
         />
       </form>
     </main>
+    </>
   );
 }
 
